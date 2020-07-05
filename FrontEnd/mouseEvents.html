@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+	<!--------------- special jquery effects file such as draggable,accordian -->
+	<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	<!-------- Source file of jquery effects -------------------------------->
+<style type="text/css">
+	#drag{
+		display: absolute;
+		height: 24vh;
+		width:24vw;
+		left:400px;
+		background-color: olive;
+	}
+	#move{
+		display: absolute;
+		height: 24vh;
+		width: 24vw;
+		left:500px;
+		background-color: yellow;
+	}
+</style>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#drag").draggable();
+		$("#move").mouseover(function(){
+			$(this).html("<h1>I am going!</h1");
+			$(this).animate({bottom:"+=300px",color:"red",height:"300px"},500);
+		});
+	});
+</script>
+</head>
+<body>
+	<div id='drag'>
+		
+	</div>
+	<div id='move'>
+		
+	</div>
+	
+</body>
+</html>

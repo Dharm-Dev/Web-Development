@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Parallax Effect using BootStrap</title>
+	<style type="text/css">
+		.para{
+			margin-top: 45px;
+			background-image: url('wallpaper/night2.webp');
+			background-attachment: fixed;
+			background-size: cover;
+			min-height: 110vh;
+			/*parallax effect*/
+		}
+		.para2{
+			background-image: url("wallpaper/mount2.webp");
+			min-height:110vh;
+
+			background-attachment: fixed;
+			background-size: cover;
+		}
+		.cnt{
+			min-height: 110vh;
+			background-image: url('wallpaper/mount5.webp');
+			background-size: cover;
+			background-attachment: fixed;
+		}
+		.cnt2{
+			height: 110vh;
+			color:white;
+			padding:12px;
+			background-image: url('wallpaper/sky2.webp');
+			background-size: cover;
+			background-attachment: fixed;
+		}
+		.cnt3{
+			height: 110vh;
+		
+			padding:12px;
+			background-image: url('wallpaper/lake2.webp');
+			background-size: cover;
+			background-attachment: fixed;
+		}
+
+		.dark{
+			background-color: black;
+			color:white;
+		}
+		.ht{
+			min-height: 110vh;
+		}
+		.clr{
+			color:white;
+		}
+		.txt{
+				text-align: center;
+			text-shadow: currentColor; 
+			padding:4vh;
+			line-height: 2em;
+			font-family: times new roman;
+			word-spacing: 1em;
+			text-transform: uppercase;
+		
+		}
+		button
+		{
+			position: fixed;
+		}
+	</style>
+	<script type="text/javascript">
+		function Tog() {
+			var a=document.body;
+			a.classList.toggle('dark');
+			// body...
+		}
+	</script>
+</head>
+<body>
+	<!-- <button onclick="Tog()">Toggle</button> -->
+	
+	<div class="para">
+		<nav>	
+		<h1>Parallax Effect</h1>
+
+	</nav>
+		<div class="cnt txt">
+			One
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+
+		<div style="height:100vh;" class="cnt3 txt">
+			Two
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+		
+		<div class="para2 txt">
+			Three
+
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							<button>Down</button>
+		</div>
+		
+		<div class="cnt2 txt">
+			Four
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+		<div class="ht clr cnt txt">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BootStrap</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width , initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<!-- 
+	----------Bootstrap CSS file ---------- -
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	
+	-- ----------Bootstrap JS file ---------- -
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	----------JQuery Files--------
+	<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+
+	------------- Boot custom css-------------	 -->
+	<link rel="stylesheet" type="text/css" href="bootstyle.css">
+
+</head>
+<body>
+	
+
+	<!-- ------------Bootstrap Container------------------- -->
+	
+	<div class="container-fluid">
+		<nav class="navbar navbar-inverse">
+			  <div class="container">
+				<div class="navbar-header">
+					<button class="navbar-toggle" data-toggle='collapse' data-target='#nav1' ><span class='icon-bar'></span><span class='icon-bar'></span><span class='icon-bar'></span></button>
+					<p class="navbar-brand">Boot Practice Responsive Navbar</p>
+				</div>	
+				
+				<div id='nav1' class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+					
+						<li>
+						  <a href="#">
+							<div class="dropdown">
+								<p class="dropdown" data-toggle='dropdown' >Home<span class="caret"></span></p>
+								<ul class="list-group dropdown-menu">
+									<li class="list-group-item list-group-item-warning">Label</li>
+									<li class="list-group-item list-group-item-danger" >Label</li>
+									<li class="list-group-item list-group-item-success" >Label 3</li>
+								</ul>
+
+							</div>
+						  </a>
+						</li>
+						
+						<li><a href="index2.html">BootStrap 1.2</a></li>
+						<li><a href="carousel.html">Carousel</a></li>
+						<li><a href="parallax.html">Parallax</a></li>
+						<li><a href="index.php">JQuery Practice</a></li>
+						<li><a href="gallary.html">Gallary<span class="glyphicon glyphicon-picture"></span></a></li>
+						
+					</ul>		
+					
+					<ul class="navbar-nav nav navbar-right">
+						<li><a href="#">
+							<form class="navbar-search">
+								<input type="text" class="search-query"  placeholder="Search" />
+							</form>
+							
+						</a></li>
+						<li><a href="#"><span class="glyphicon glyphicon-thumbs-up">Like</span></a></li>
+					</ul>
+				
+				</div>
+				<!-- Container div closed below -->
+				</div>
+
+			 
+			</nav>
+			<!-- -----------Carousel -->
+		<h2>Carousel Example</h2>
+		<div id="mycarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+					<!-- indicators -->
+					<ol class="carousel-indicators">
+						<li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#mycarousel" data-slide-to="1"></li>
+						<li data-target="#mycarousel" data-slide-to="2"></li>
+					</ol>
+					<!-- Wrapper for slider -->
+					<div class="carousel-inner" role='listbox'>
+						
+						<!-- items -->
+						<div class="item active">	
+							<img src="Mountains/land1.jpg">
+							<!-- Caption -->
+							<div class="carousel-caption">
+								<h3>BootStrap Practice Link below</h3>
+								<a href="index2.html" class="btn btn-success">Click Me!</a>
+							</div>
+						</div>
+						
+						<!-- items -->
+						<div class="item">	
+							<img src="Mountains/land2.jpg" />
+							<!-- Caption -->
+							<div class="carousel-caption">
+								<h3>Scroll Spy Link below</h3>
+								<a href="scrollspy.html" class="btn btn-warning">Click Me!</a>
+							</div>
+						</div>
+						<!-- items -->
+						<div class="item">	
+							<img src="Mountains/land4.jpg" />
+							<!-- Caption -->
+							<div class="carousel-caption">
+								<h3>JQuery Link below</h3>
+								<a href="index.php" class="btn btn-info">Click Me!</a>
+							</div>
+						</div>
+
+
+					</div>
+
+
+					<!-----------------carousel  navigation -->
+					<a class="left carousel-control" href="#mycarousel" role="button" data-slide='prev'> <span class="glyphicon glyphicon-chevron-left"></span>
+      
+      					<span class="sr-only">Previous</span>
+  					</a>
+					<a class="right carousel-control" href="#mycarousel" role="button" data-slide='next'> <span class="glyphicon glyphicon-chevron-right" aria-hidden='true'></span>
+						<span class="sr-only">Next</span>
+					</a>
+
+				</div>
+				<!-- Carousel ends above-->
+					
+		<!-- -------New Jumbotron----------- -->
+		<div class="jumbotron bg1">
+				<img src="Logo/bootstrap.jpg" class=" img-rounded  img-thumbnail image-responsive">
+				<h1>BootStrap Portfolio</h1>
+				<H3>I am Jumbotron!</H3>
+				<p>I am inside container</p>
+		</div>
+		
+	<!-- ------------Jumbotron 2---------- -->
+		<div class="jumbotron bg">
+			
+			<!-- -------------Link Pannel Collapse---------------------------- -->
+			<div class="panel panel-primary panel-sm">
+
+				<div class="panel-heading" data-toggle='collapse' data-target='#panelLink'>
+					<p class="panel-title">Link Panel</p>
+				</div>
+				
+				<div id='panelLink' class="collapse pannel-collapse">
+
+					<div class="panel-body ">
+								<ul class="list-group">
+									<a href="gallary.html" class="list-group-item">Photo Gallary<span class="glyphicon glyphicon-heart"></span></a>
+								</ul>
+					</div>
+					
+					<div class="panel-footer">
+						Footer
+					</div>
+				
+				</div>
+				<!-- Collapse div ends -->
+			</div>
+			<!-- -collapse heading div ends---- -->
+		</div>
+<!-- ------------------Page Header---------------------------------------------- -->
+		<div class="page-header bg1">
+			<h2>Page Header</h2>
+			Page header is same as jumbotron but compacted!
+			<hr>
+			<bold>Types of Buttons</bold><br>
+			<div class="btn-group-vertical  btn-lg">
+
+			<button class="btn btn-primary ">Default</button>
+			<button class="btn btn-default ">Primary</button>
+			<button class="btn btn-link ">Link</button>
+			
+			</div>
+
+			<button class="btn btn-lg btn-warning">large</button>
+			<button class="btn btn-md btn-success ">Success</button>
+			<button class="btn btn-sm btn-info">small</button>
+			<button class="btn btn-xs ">extra small</button>
+			
+			<button class="btn btn-primary disabled">Disabled</button>
+
+			<button class="btn btn-success active ">Primary</button>
+			<button class="btn btn-danger btn-block">Primary</button>
+			
+				<button class="btn btn-warning btn-lg btn-block ">Primary Large</button>
+				<button class="btn btn-warning btn-sm btn-block ">Primary Small</button>
+				<button class="btn btn-warning btn-xs btn-block ">Primary XSmall</button>
+			
+			<hr>
+		</div>
+
+	<!-- ----------------Alerts------------------ -->
+			<div>
+				<br><big><bold>Alerts</bold></big>
+				<div class="alert alert-success fade in">
+					<a href="#" class="close" data-dismiss="alert">close</a>
+					<strong>Success</strong>
+				</div>
+
+				<div class="alert alert-warning"><strong>Warning</strong></div>
+			</div>
+
+		<!-- --------------Well Row---------------------------------- -->
+		<div>
+			<br><big><bold>Well</bold></big>
+			<div class="well well-sm">I am well small</div>
+			<div class="well">I am Normal &times;well </div>
+			<div class="well well-lg">I am well long</div>
+		</div>
+		<!----------------Main  Row Started ---------- -->
+		<div>
+			
+			<div class="col-lg-4 bg1">
+				Different Types of Tags.
+			  <ul>
+				<li><abbr title="blockquote"><mark>Reverse Quote style</mark></abbr>
+				<blockquote class="blockquote-reverse">
+					At the beginning of World War Two, almost all Americans assumed the war would end quickly.<footer>Lorum</footer>
+				</blockquote>
+				</li>
+				
+				<li>
+				<p class='text-info'>Info Text</p>
+				</li>
+
+				<li>
+				<code>
+					<div align="center">Hello Div</div>
+						<pre><u>Pre Tag</u><br>This is a div align center.<br>Paste:<kbd>ctrl+v</kbd>  </pre>
+					<p>I am <em>paragraph</em>.</p>
+					
+					<span>Span</span><div>div</div><span>span</span>
+				</code>
+				</li>
+			  </ul>
+			</div>
+			
+
+			<div class="col-lg-4 bg2" >
+				<h3 class="bg-danger"><abbr title="Different Text Styles">Styles</abbr></h3>
+				<p class='text-primary'>Primary</p>
+				<p class='bg-warning text-info'>Bg Warning</p>
+				<p class='bg-info text-danger'>Danger</p>
+				<p class='bg-warning'>Bg Warning</p>
+				<p class='text-success'>Success Text</p>
+				<h2>Progress bar</h2>
+				<div class="progress">
+					<div class="progress-bar" style="width:45%">
+					45%
+					</div>
+				</div>
+				<h2>Animated Progress bar</h2>
+				<div class="progress">
+					<div class="progress-bar progress-bar-success progress-bar-striped active" style="width:75%">
+					75%
+					</div>
+				</div>
+				<div>
+					<strong>Badge</strong><br>
+					<span class="badge">7</span><br>
+
+					<strong>Label</strong><br>
+					<span class="label label-success">Success Label</span>
+					
+				</div>
+			</div>
+			
+
+			<div class="col-lg-4 bg3">
+				<table class="table table-hover table-striped table-bordered table-condensed ">
+					<thead >
+						<th>Name</th>
+						<th>Surname</th>
+					</thead>
+					<tr><td>Aman</td><td>Rashtogi</td></tr>
+					<tr class="warning"><td>Akshay</td><td>Kohli</td></tr>
+					<tr><td>Anushka</td><td>Sharma</td></tr>
+										
+				</table>
+				<div >
+					<h2>Glyphicons</h2>
+					Heart<span class="glyphicon glyphicon-heart"></span><br>
+					Search<span class="glyphicon glyphicon-search"></span><br>
+					<span class="btn btn-success glyphicon glyphicon-print">printer</span><br>
+					Star<span class="glyphicon glyphicon-star"></span><br>
+					<button class="btn btn-default"><span class="glyphicon glyphicon-search">Search</span></button><br>
+					<span class="glyphicon glyphicon-star-empty">Star</span>
+					
+				</div>
+			</div>
+
+		</div>
+	<!-- ------------row ends-------- -->
+		<div>
+			<div class="col-lg-4 bg">
+				<h2>Pager</h2>
+				<ul class="pager">
+					<li><a href="#">Prev</a></li>
+					<li><a href="#">Next</a></li>
+				</ul>
+				
+				<h2>Pager at ends</h2>
+				<ul class="pager">
+					<li class="previous"><a href="#">Prev</a></li>
+					<li class="next"><a href="#">Next</a></li>
+				</ul>
+			
+			</div>
+
+			<div class="col-lg-4 bg3">
+				<h2>Breadcrumb Style</h2>
+				<ul class="breadcrumb">
+					<li><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#" class="active">3</a></li>
+					<li><a href="#">4</a></li>
+				</ul>
+
+				<h2>Pagination style</h2>
+				<ul class="pagination pagination-lg">
+					<li><a href="#">1</a></li>
+					<li class="active"><a href="#">2</a></li>
+					<li class="disabled"><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+				</ul>
+			</div>
+
+			<div class="col-lg-4 bg2">
+				<h2>List Group</h2>
+				<ul class="list-group">
+					<div class="list-group-item list-group-item-success">
+						<h4 class="list-group-item-heading">Heading: List group</h4>
+						<p class="list-group-item-text">Text: List group is used to group items as a list.</p>
+					
+					</div>
+					<li class="list-group-item">List group Item with badge<span class="badge">1</span></li>
+					<a href="#" class="list-group-item">List group Item with hover effect</a>
+					<a href="#" class="list-group-item active">List group Item with hover effect and active</a>
+					<a href="#" class="list-group-item disabled">List group Item with hover effect and disabled</a>
+					<li class="list-group-item">List group Item with badge<span class="badge">5</span></li>
+					<a href="#" class="list-group-item list-group-item-warning">List group Item with hover effect and contextual class</a>
+				</ul>
+			</div>
+			
+		</div>
+			<!-- --------------second row ends----------- -->
+		<div class="bg">
+			<div class="col bg3">
+				<h3>Dropdown List</h3>
+				
+				<div class="dropdown">
+					<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Menu<span class='caret'></span></button>
+					<ul class="dropdown-menu">
+						<li><a href="#">option 1</a></li>
+						<li><a href="#">option 2</a></li>
+						<li><a href="#">option 3</a></li>
+						<li class="divider"></li>
+						<li class="dropdown-header">Non-Technical</li>
+						<li><a href="#">option 4</a></li>
+						<li class="disabled"><a href="#">option 6</a></li>
+						<li><a href="#">option 5</a></li>
+					</ul>
+				</div>
+				<h3>DropUp List</h3>
+				
+				<div class="dropup">
+					<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Menu<span class='caret'></span></button>
+					<ul class="dropdown-menu dropdown-menu-success">
+						<li><a href="#">opt1</a></li>
+						<li><a href="#">opt2</a></li>
+						<li><a href="#">opt3</a></li>
+						<li class="dropdown-header">Non-Technical</li>
+						<li class="divider"><a href="#">opt4</a></li>
+						<li><a href="#">opt6</a></li>
+						<li><a href="#">opt5</a></li>
+					</ul>
+				</div>
+					<hr>
+				<!-- ----------Collapse Section -->
+				<div>
+					<button class="btn btn-primary" data-toggle="collapse" data-target="#txt">Collapse</button>
+					<p id='txt' class="collapse">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+					<hr>
+					<a href="#txt2" class="btn btn-info" data-toggle="collapse">Collapse using link</a>
+					
+					<p id='txt2' class="collapse in">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+					<hr>
+				</div>
+				<!-- ----------------Collapse section  ends above -->
+			</div>
+		</div>
+			<!-- ------------new Row --------------->
+		<div >	
+			<h2 class="text-primary">Pannel</h2>
+			<!-- ----Panel Section starts here-------- -->
+				<div class="panel-group">
+					
+					<!-- ----Panel Section 1-------- -->
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<a data-toggle='collapse' href='#panel'>Collapse Pannel</a>
+							</h4>
+						</div>
+
+						<div id='panel'class="panel-collapse collapse">
+							<div class="panel-body">text</div>
+							<div class="panel-footer">Footer</div>
+						</div>
+						
+					</div>
+					<!-- ----Panel Section 2-------- -->
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<a data-toggle='collapse' href='#panel2'>Collapse Pannel 2</a>
+							</h4>
+						</div>
+
+						<div id='panel2'class="panel-collapse collapse">
+							<div class="panel-body">text of Panel</div>
+							<div class="panel-footer">Footer</div>
+						</div>
+						
+					</div>
+
+				</div>
+				<!-- ----Panel Section Ends above------- -->
+
+		</div>
+		<!-- Row ends above-------------- -->
+
+	</div>
+	<!-- --------Container ends here------------ -->
+</body>
+</html>

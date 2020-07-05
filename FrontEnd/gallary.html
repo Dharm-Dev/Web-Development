@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gallary</title>
+	<meta charset="utf-8">
+	<meta name="ViewPort" content="width=device-width , initial-scale=1">
+	
+	<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+
+	<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	
+	<script type="text/javascript">
+		var h=120;
+		$(document).ready(function(){
+			$("#bigpic").draggable();
+		});
+	</script>
+	
+	<style type="text/css">
+		body{
+			background-color: #777; 
+		}
+		#container{
+			background-color: #333;
+			
+		}
+		#thumbnail{
+			height: 80px;
+			width: 80px;
+			margin: 10px;
+		}
+		#thumbnail:hover{
+			border: 2px solid #39ff14;
+		}
+		#preview{
+			height: auto;
+		}
+		#bigpic{
+		
+			max-height: 200px;
+			max-width:300px;
+			border:4px solid pink;
+			position: absolute;
+		}
+		button{
+			background-color: skyblue;
+			padding: 3px;
+		}
+		h1{
+			word-spacing: 12px;
+		}
+		span{
+			color:red;
+			font-size: 5vh;
+			margin:0 2px 0 0;
+			font-family: sans-serif;
+			font-weight: 600;
+			text-transform: uppercase;
+			text-shadow: blue;
+		}
+		
+	</style>
+
+<body>
+<a href='index.php'>CLick Here for <span>J</span>query</a>
+<h1><center><span>G</span>allary <span>V</span>iew</center></h1>
+<div id='container' align="center">
+		
+		<img id='thumbnail' onmouseover="preview.src=this.src" src="Mountains/mount1.jpg">
+		<img id='thumbnail' onmouseover="preview.src=this.src" src="Mountains/mount2.jpg">
+		<img id='thumbnail' onmouseover="preview.src=this.src" src="Mountains/mount3.jpg">
+		<img id='thumbnail' onmouseover="preview.src=this.src" src="Mountains/mount4.jpg">
+	
+		<img id='thumbnail' onmouseover="preview.src=this.src" src="Mountains/land1.jpg">
+		<img id='thumbnail' onmouseover="preview.src=this.src" src="Mountains/land2.jpg">
+		<img id='thumbnail' onmouseover="preview.src=this.src" src="Mountains/land3.jpg">
+		<img id='thumbnail' onmouseover="preview.src=this.src" src="Mountains/land4.jpg">
+
+		<img id='thumbnail' onmouseover="preview.src=this.src" src="Mountains/night1.jpg">
+		<img id='thumbnail' onmouseover="preview.src=this.src" src="Mountains/night2.jpg">
+		<img id='thumbnail' onmouseover="preview.src=this.src" src="Mountains/night3.jpg">
+		<img id='thumbnail' onmouseover="preview.src=this.src" src="Mountains/night4.jpg">
+
+	</div>
+	<div id='preview' align="center">
+		<img name='preview' id='bigpic' src="Mountains/mount1.jpg">
+	</div>
+</body>
+</html>

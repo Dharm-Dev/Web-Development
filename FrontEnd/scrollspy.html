@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Scroll Spy</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width , initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  	<style type="text/css">
+  		#ln1,#ln2,#ln3{
+  			height: 185vh;
+  			padding-top: 10vh;
+  		}
+  		#ln1{background-color: orange;}
+  		#ln2{ background-color: blue; }
+  		#ln3{background-color: purple}
+  		#htext{
+  			font-size: 16px;
+  			color:yellow;
+  		}
+  		body{
+  			position: relative;
+  		}
+  		.glyphicon-search{
+  			font-size: 14vh;
+  			color:white;
+  		}
+  		i:hover{
+  			background-color: #faccaf;
+  		}
+  		i{
+  			position: absolute;
+  		}
+  	</style>
+  	<script type="text/javascript">
+  		$(document).ready(function(){
+  			$('i').draggable();
+  			$('i').mouseover(function(){
+  				$(this).html("<p id='htext'>Drag Me!</p>");
+  			});
+  			$('i').mouseout(function(){
+  				$(this).html(" ");
+  			});
+  			
+  		});
+  	</script>
+</head>
+
+<body data-spy="scroll" data-target='.navbar'>
+
+<nav class=" container navbar navbar-inverse navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<button class="btn navbar-toggle" data-target='#nav' data-toggle='collapse'><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+			<p class="navbar-brand">Scroll Spy</p></div>
+		<div class="navbar-collapse collapse" id='nav'>	
+			<ul class="nav navbar-nav navbar-right">
+					<li><a href="#ln1">Link 1</a></li>
+					<li><a href="#ln2">Link 2</a></li>
+					<li><a href="#ln3">Link 3</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<div class="container" id='ln1'>
+	Link 1
+	<i class="glyphicon glyphicon-search"></i>
+</div>
+<div class="container" id='ln2'>
+	
+</div>
+<div class="container" id='ln3'>
+	
+</div>
+
+</body>
+</html>
